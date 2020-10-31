@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=David+Libre&display=swap');
+@import url('//basehold.it/25');
+
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+/* stylelint-disable */
+a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,caption,center,cite,code,dd,del,details,dfn,div,dl,dt,em,embed,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,output,p,pre,q,ruby,s,samp,section,small,span,strike,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,tt,u,ul,var,video{margin:0;padding:0;border:0;font:inherit;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section{display:block}html{line-height:1}body{line-height:inherit}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:after,blockquote:before,q:after,q:before{content:'';content:none}table{border-collapse:collapse;border-spacing:0}
+/* stylelint-enable */
+
+html{
+  font-family: Times, Georgia, 'David Libre';
+  font-size: 1.313em; /* 21px / 16px = 1.313em */
+  line-height: 1.19047619em; /* 25px / 21px = 1.19047619em */
+  padding: 0.79365079333em; /* 1 / 3 line-height */
+  background: black;
+}
+
+h1{
+  padding-top: 0.5em;
+  font-weight: 800;
+  background-color: #c7f0ea;
+  text-align: center;
+  line-height: 0.79365079333em; /* 2/3 line-height */
+  font-size: 200%;
+}
+
+body{
+  padding: 1em;
+  background-color: #c7f0ea;
+}
+
+nav a{
+  margin: 0.595238095em 0.595238095em; /* half line*/
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  background: #50ab9f;
+  color: #222;
+  padding-block: 0.595238095em;
+}
+
+nav li{
+  margin: 0.79365079333em 0.79365079333em; /* half line*/
+  background: black;
+  border-radius: 0.79365079333em;
+}
+
+a:hover{
+  background: #607d9e;
+}
+
+h2{
+  padding-top: 1.19047619em; /* 25px / 21px = 1.19047619em */
+  font-weight: 800;
+}
+
+h3{
+  font-style: italic;
+  font-weight: 800;
+  padding-top: 1.19047619em; /* 25px / 21px = 1.19047619em */
+}
+
+h5{
+  padding-top: 1.19047619em; /* 25px / 21px = 1.19047619em */
+}
+
+p{
+  padding-top/bottom: 1.19047619em; /* 25px / 21px = 1.19047619em */
+  margin: 0.595238095em;
+}
+
+#content li{
+  padding-left: 1.19047619em;
+}
+
+ul h5{
+  padding-left: 1.19047619em;
+}
+
+ul ul {
+  padding-left: 1.19047619em;
+}
+
+footer{
+  font-size: 0.75em; /* 12px / 16px =.75em */
+  text-align: center;
+}
+
+/* State Styles */
+@media screen and (min-width: 710px){
+   body{
+    display: grid;
+    grid-gap: 1.313em;
+    grid-template-columns: 1fr minmax(2ch, 50ch);
+    grid-template-rows: 1fr 1fr;
+  }
+  #ptitle {
+    font-size: 200%;
+    font-weight: 800;
+    text-align: center;
+    margin-top: -0.4em; /* purely off eye design */
+    margin-bottom: 0.455em; /* purely off eye design */
+  }
+  #ctitle {
+    font-size: 105%;
+    text-align: left;
+    color: black;
+    text-decoration: underline;
+    margin-bottom: 0.595238095em;
+  }
+  #address {g
+    margin-top: 0.45em; /* purely off eye design */
+    margin-bottom: 0.39em; /* purely off eye design */
+  }
+  ul.links{
+  }
+  footer{
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+}
